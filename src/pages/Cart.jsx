@@ -32,12 +32,12 @@ function Cart() {
     <div className="min-h-screen bg-[#faf3e0] pt-32 px-6 md:px-20 overflow-hidden">
 
       <h1 className="text-5xl font-bold text-[#3e2723] mb-12 text-center">
-        Your Cart 🛒
+        Your Cart 
       </h1>
 
       {cart.length === 0 ? (
         <p className="text-center text-[#6f4e37] text-lg">
-          Your cart is empty ☕
+          Your cart is empty 
         </p>
       ) : (
         <>
@@ -101,7 +101,7 @@ function Cart() {
 
           </div>
 
-          {/* TOTAL */}
+         
           <div className="text-center m-10 ">
             <h2 className="text-2xl font-bold text-[#3e2723]">
               Total: Rs. {totalPrice}
