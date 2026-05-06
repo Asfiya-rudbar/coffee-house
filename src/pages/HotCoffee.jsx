@@ -6,7 +6,6 @@ function HotCoffee() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    // Backend se fetch
     fetch("http://localhost:5000/api/products?category=Hot Coffee")
       .then((res) => res.json())
       .then((data) => setProducts(data))
@@ -15,18 +14,17 @@ function HotCoffee() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#c6b2a2] via-[#f9f0d7] to-[#e0c9aa] pt-32 px-6 md:px-20">
-      {/* Heading */}
+
       <h1 className="text-5xl font-extrabold tracking-wide text-transparent 
       bg-clip-text bg-gradient-to-r from-[#3e2723] via-[#6f4e37] to-[#b07d62] 
       mb-20 text-center">
         Hot Coffee
       </h1>
 
-      {/* Cards */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
         {products.length === 0 ? (
           <p className="text-[#6f4e37] text-center text-xl mt-10">
-            No Hot Coffee products found. ☕
+            No Hot Coffee products found. 
           </p>
         ) : (
           products.map((item) => (
@@ -37,7 +35,7 @@ function HotCoffee() {
               hover:-translate-y-7 hover:shadow-15xl
               transition duration-300"
             >
-              {/* Image */}
+              
               <div className="h-92 bg-gradient-to-br from-[#4e342e]/40 via-[#6f4e37]/30 to-[#d4a373]/40
               flex items-center justify-center text-[#3e2723] text-lg font-medium shadow-inner">
                 <img
@@ -47,7 +45,6 @@ function HotCoffee() {
                 />
               </div>
 
-              {/* Content */}
               <div className="p-4 text-center">
                 <h2 className="text-2xl font-bold text-[#3e2723]">
                   {item.name}
