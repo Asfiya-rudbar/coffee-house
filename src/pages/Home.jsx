@@ -96,7 +96,7 @@ function Home() {
                 scrollTrigger: {
                   trigger: card,
                   start: "top 85%",
-                  toggleActions: "play none none none", // 🔥 important
+                  toggleActions: "play none none none", 
                 },
               }
             );
@@ -175,19 +175,15 @@ function Home() {
   return (
     <div className="bg-[#c6b2a2]">
 
-      {/* HERO SECTION */}
       <section className="hero-section relative min-h-screen overflow-hidden flex flex-col justify-center items-center text-center ">
         
-        {/* ✅ Background FIX */}
         <div
           className="hero-bg absolute inset-0 w-full h-full bg-cover bg-center"
           style={{ backgroundImage: `url(${heroImg})` }}
         />
 
-        {/* Overlay */}
         <div className="absolute inset-0 bg-black/40 z-0"></div>
 
-        {/* Content */}
         <div className="relative z-10">
           <h1 className="text-6xl md:text-7xl font-extrabold mb-6 ">
             <span className="inline-block text-white [text-shadow:0_4px_12px_rgba(0,0,0,0.8)] mr-2">
@@ -225,7 +221,6 @@ function Home() {
         </div>
       </section>
 
-      {/* PASSION SECTION */}
       <section className="reveal-section bg-[#372825] text-white py-24 px-8 md:px-20 grid md:grid-cols-2 gap-12 items-center -mt-20 relative">
         <div className="passion-text">
           <h2 className="text-5xl font-extrabold mb-6">
@@ -247,7 +242,6 @@ function Home() {
         </div>
       </section>
 
-      {/* ZIG-ZAG SECTION */}
       <section className="reveal-section py-24 px-6 md:px-20 overflow-hidden bg-gradient-to-br from-[#c6b2a2] via-[#f9f0d7] to-[#e0c9aa] ">
         <div className="space-y-16">
 
