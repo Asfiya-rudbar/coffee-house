@@ -4,7 +4,7 @@ function MenuCard() {
   return (
     <div className="p-10">
       <h1 className="text-5xl font-bold text-center mb-12">
-        Our Full Menu ☕
+        Our Full Menu 
       </h1>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
