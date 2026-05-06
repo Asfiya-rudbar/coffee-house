@@ -19,12 +19,10 @@ export default function Navbar() {
     <header className="fixed top-0 w-full z-50 backdrop-blur-md bg-white/30 border-b border-white/20">
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
 
-        {/* Logo */}
         <NavLink to="/" className="text-2xl font-bold text-[#3e2723]">
           CoffeeShop
         </NavLink>
 
-        {/* Desktop Nav */}
         <nav className="hidden md:flex gap-8 items-center">
           {navLinks.map((link) => (
             <NavLink
@@ -36,7 +34,6 @@ export default function Navbar() {
             </NavLink>
           ))}
 
-          {/* Cart */}
           <div className="relative">
             <NavLink to="/cart" className="text-2xl">
               🛒
@@ -50,7 +47,6 @@ export default function Navbar() {
           </div>
         </nav>
 
-        {/* Mobile */}
         <div className="flex items-center gap-3 md:hidden">
           <div className="relative">
             <NavLink to="/cart" className="text-2xl">
@@ -68,9 +64,8 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       {open && (
-        <div className="md:hidden p-4 flex flex-col gap-3 bg-white border-t">
+        <div className="md:hidden p-4 flex  align-items: center flex-col gap-3 bg-white border-t">
           {navLinks.map((link) => (
             <NavLink
               key={link.name}
